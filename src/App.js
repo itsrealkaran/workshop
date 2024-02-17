@@ -1,12 +1,12 @@
 import "./App.css";
-import { useState } from "react";
+import Header from "./Header";
+import List from "./List";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
-      <button onClick={() => setCount(count + 1)}>click me {count}</button>
+    <div className="App">
+      <Header addItem={addItem} />
+      <List items={items} deleteItem={deleteItem} />
     </div>
   );
 }
