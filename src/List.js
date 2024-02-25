@@ -2,9 +2,9 @@ import React from "react";
 
 function List({ items, deleteItem }) {
   return (
-    <div>
+    <div className="List">
       {items.map((item) => (
-        <div key={item.id}>
+        <div className="ListItem" key={item.id}>
           {item.text}
           <button onClick={() => deleteItem(item.id)}>Delete</button>
         </div>
