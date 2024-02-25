@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Header addItem={addItem} />
-      {/* <List items={items} deleteItem={deleteItem} /> */}
+      <List items={items} deleteItem={deleteItem} />
     </div>
   );
 }
