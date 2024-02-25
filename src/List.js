@@ -3,6 +3,8 @@ import React from "react";
 function List({ items, deleteItem }) {
   return (
     <div className="List">
+      {/*Checking if the value is empty.*/}
+      {items == "" && <p>-- No Task --</p>}
       {items.map((item) => (
         <div className="ListItem" key={item.id}>
           {item.text}
