@@ -9,12 +9,13 @@ function List({ items, deleteItem }) {
           <button
             style={{
               color: "#ff0000",
-              backgroundColor: "#ff000079",
+              backgroundColor: "#fcdada",
+              borderRadius: "50%",
               border: "None",
             }}
             onClick={() => deleteItem(item.id)}
           >
-            Delete
+            <i class="fa fa-trash-o"></i>
           </button>
         </div>
       ))}
