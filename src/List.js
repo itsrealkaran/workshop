@@ -6,7 +6,16 @@ function List({ items, deleteItem }) {
       {items.map((item) => (
         <div className="ListItem" key={item.id}>
           {item.text}
-          <button onClick={() => deleteItem(item.id)}>Delete</button>
+          <button
+            style={{
+              color: "#ff0000",
+              backgroundColor: "#ff000079",
+              border: "None",
+            }}
+            onClick={() => deleteItem(item.id)}
+          >
+            Delete
+          </button>
         </div>
       ))}
     </div>
